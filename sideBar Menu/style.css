@@ -1,0 +1,90 @@
+body{
+    background-color: #ddd3d3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+
+nav{
+   background-color: rgb(205, 167, 163);
+   box-shadow: 0 0 10px black;
+}
+.navbarmenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  1rem ;
+}
+ul{
+    list-style-type: none;
+}
+.menu{
+    height: 0;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+
+
+.menu a{
+    font-size: 19px;
+text-decoration: none;
+padding: 10px 20px ;
+line-height: 26px;
+font-weight: 600;
+letter-spacing: .095rem;
+display: block;
+color: blue;
+
+}
+.menu a:hover{
+    background-color: #225f6d;
+    color: aqua;
+    /* padding: 0 40px ; */
+    /* font-size: 20px; */
+}
+.show-menu{
+    height: 10rem;
+    
+}
+
+.ri-align-justify{
+    font-size: 1.5rem;
+    color: red;
+}
+
+.ri-align-justify:hover{
+    color: black;
+}
+
+@media (min-width:800px){
+.navbar{
+    max-width: 1900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.navbarmenu{
+    padding: 0;
+}
+.ri-align-justify{
+    display: none;
+}
+.menu{
+    
+    height: auto;
+    display: flex;
+}
+ /* .menu a{
+    padding: 10px; 
+     margin: 0 .6rem;
+} */
+.menu a:hover{
+    /* padding: 0; */
+    background: transparent;
+}
+
+}
